@@ -66,8 +66,6 @@ export function CyclesContextProvider({children}: CyclesContextProviderProps) {
     return 0
   })
 
-  // Essa função é parâmetro para a handleSubmit do próprio Hook Form. Ela tem como parâmetro os dados em si, e não o event
-  // A função reset, provida pelo useForm, reseta os valores para os defaultValues
   function createNewCycle(data: CreateCycleDate) {
 
     const newCycle: Cycle = {
@@ -88,7 +86,6 @@ export function CyclesContextProvider({children}: CyclesContextProviderProps) {
     dispatch(finishCycleAction())
   }
 
-  /* Adicionando ciclos ao local storage, com nomenclatura suficiente para diferenciar até as próprias versões do app */
   useEffect(() => {
     const stateJSON = JSON.stringify(cyclesState, null, 2)
     localStorage.setItem('@pomodoro:cycles-state-1.0.0', stateJSON)

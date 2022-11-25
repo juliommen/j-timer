@@ -75,7 +75,7 @@ export const Status = styled.span<StatusProps>`
   align-items: center;
   gap: 0.5rem;
 
-  /* com esse seletor inserir-se algo (content) antes do conteúdo elemento */
+  /* com esse seletor inseri-se algo (content, obrigatório mesmo que só '') antes do conteúdo elemento */
   &::before {
     content: '';
     width: 0.5rem;

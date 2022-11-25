@@ -3,10 +3,6 @@ import logo from '../../assets/logo.png'
 import { Timer, Scroll } from 'phosphor-react'
 import { NavLink } from 'react-router-dom'
 
-// O componente NavLink, do React-Router-Dom é uma 'anchor' que faz o direcionamento para as rotas definidas em Router.
-// Quando o usuário clica numa 'anchor', uma classe 'active' é adicionada a ela.
-// O atributo 'end' é para que a classe 'active' saia do primeiro NavLink, quando o usuário clica no segundo NavLink.
-// Isso ocorre pois o router entender o caminho '/' como genérico.
 export function Header() {
   return (
     <HeaderContainer>

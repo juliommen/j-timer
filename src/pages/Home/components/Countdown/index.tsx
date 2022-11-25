@@ -12,7 +12,6 @@ export function Countdown() {
     setSecondsPassed,
   } = useContext(CyclesContext)
 
-  // Variáveis para obter os números de display do timer
   const totalSeconds = activeCycle ? activeCycle.minutes * 60 : 0
   const currentSeconds = activeCycle ? totalSeconds - amountSecondsPast : 0
   const minutesAmount = Math.floor(currentSeconds / 60)

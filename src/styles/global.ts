@@ -1,4 +1,3 @@
-// Criando estilos globais utilizando o componente createGlobalStyle de styled components
 import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
   * {
